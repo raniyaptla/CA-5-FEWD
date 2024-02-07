@@ -1,0 +1,235 @@
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container img {
+  width: 13%;
+  height: 13%;
+}
+
+.logo-name {
+  background: linear-gradient(to bottom, #ff6666, #b30000);
+  -webkit-background-clip: text;
+  color: transparent; /* text color to transparent to allow gradient to show through */
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f0f0f0;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.left-section {
+  flex: 1;
+}
+
+.center-section {
+  flex: 2;
+  text-align: center;
+  display: flex;
+}
+
+.center-section h3 {
+  margin-left: 20px;
+  margin-bottom: 25px;
+}
+
+.right-section {
+  flex: 1;
+  text-align: center;
+}
+
+.register-link {
+  border-radius: 5%;
+  color: darkred;
+  border: 2px solid rgb(85, 11, 132);
+  width: 100px;
+  font-family: "Inter", "system-ui", "Avenir", "Helvetica", "Arial", sans-serif;
+  background-color: transparent;
+  margin: 0;
+  padding: 2px;
+}
+
+.search-bar {
+  width: 80%;
+  padding: 12px;
+  border: 2px solid darkred;
+  border-radius: 5px;
+  margin-left: 40px;
+  margin-top: 10px;
+}
+
+/* grid app.css */
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.content-container {
+  display: flex;
+}
+
+/* BookList.css */
+.books-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow books to wrap to the next line */
+  gap: 10px;
+}
+
+.book {
+  margin-bottom: 10px;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  display: flex;
+  align-items: flex-start;
+  border: 5px solid rgb(182, 7, 7);
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.book img {
+  width: 100px;
+  margin-right: 10px;
+}
+
+.book-details {
+  flex: 1;
+}
+
+.register-link {
+  color: rgb(0, 0, 0);
+  padding: 8px 15px;
+  border: 2px solid darkred;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.register-link:hover {
+  border-color: darkred;
+}
+
+.Kalviumbooks {
+  text-decoration: none;
+}
+
+/* form.css */
+
+.form-container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  min-width: 500px;
+  margin: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 10px rgba(76, 175, 80, 0.3);
+  border: 2px solid darkred;
+  margin-top: 200px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #000000;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.error {
+  color: red;
+  margin-top: 5px;
+}
+
+button {
+  background-color: #b30000;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.success {
+  color: white;
+  background-color: #08970a;
+  border: 1px solid #2bc03f;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+body {
+  background: url("https://img.freepik.com/free-photo/liquid-marbling-paint-texture-background-fluid-painting-abstract-texture-intensive-color-mix-wallpaper_1258-85317.jpg");
+  background-repeat: no-repeat;
+  background-size: 1600px 1750px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: auto;
+}
+
+.navbar {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.content {
+  grid-column: 2;
+  grid-row: 1;
+  margin-right: 280px;
+  margin-top: 150px;
+}
+
+.success span {
+  animation: scaleInOut 1s ease-in-out infinite;
+  transform-origin: center;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+@keyframes scaleInOut {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.success.clicked span {
+  animation: none;
+}
